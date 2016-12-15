@@ -178,7 +178,7 @@ public class AliPushHelper {
                     .setTicker(extParams.get("ticker"))
                     .setVisibility(NotificationCompat.VISIBILITY_PRIVATE)
                     .setPriority(NotificationCompat.PRIORITY_HIGH)
-                    .setAutoCancel(extParams.get("autoCancel")=="1");
+                    .setAutoCancel(extParams.get("autoCancel")!="0");
 
             String group = extParams.get("group");
             if (group != null) {
