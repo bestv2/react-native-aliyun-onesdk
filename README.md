@@ -31,21 +31,7 @@ Appdelegate.m
 		}
 	}];
 	}
-```objective-c
-##android
-```java
-	@Override
-	public void onCreate() {
-	  super.onCreate();
-	  ...
-	  initCloudChannel(this);      
-	}
-	// Required to register for notifications
-	   - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
-	   {
-	    [AliPushManager didRegisterUserNotificationSettings:notificationSettings];
-	   }
-
+	
 	#pragma mark Notification Open
 	/*
 	 *  App处于启动状态时，通知打开回调
@@ -68,11 +54,25 @@ Appdelegate.m
 		// 通知打开回执上报
 		//	 application.applicationIconBadgeNumber = application.applicationIconBadgeNumber+1;
 		[AliPushManager didReceiveRemoteNotification:userInfo];
-	}   
+	}
+	// Required to register for notifications
+	   - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+	   {
+	    [AliPushManager didRegisterUserNotificationSettings:notificationSettings];
+	   }
 	- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 		NSLog(@"Upload deviceToken to CloudPush server.deviceToken:%@",deviceToken);
 
 		[AliPushManager didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+	}
+```
+##android
+```java
+	@Override
+	public void onCreate() {
+	  super.onCreate();
+	  ...
+	  initCloudChannel(this);      
 	}
 	/**
 	     * 初始化云推送通道
@@ -98,7 +98,7 @@ Appdelegate.m
 	//注册方法会自动判断是否支持华为系统推送，如不支持会跳过注册。
 	//            HuaWeiRegister.register(applicationContext);
 	    }
-```java
+```
 #available:
 ##push: remoteNotification
         bindAccount
