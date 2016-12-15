@@ -41,7 +41,7 @@
   "dependencies": {},
   "description": "React Native Aliyun OneSDK(notification)",
   "devDependencies": {},
-  "homepage": "",
+  "homepage": "https://github.com/bestv2/react-native-aliyun-onesdk",
   "keywords": [
     "React-Native",
     "ios",
@@ -60,7 +60,7 @@
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
-    "type": "git"
+    "type": "git@github.com:bestv2/react-native-aliyun-onesdk.git"
   },
   "version": "0.0.2"
 }
