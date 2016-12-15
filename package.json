@@ -14,7 +14,6 @@
     ]
   ],
   "_from": "react-native-aliyun-onesdk",
-  "_id": "react-native-aliyun-onesdk@0.0.2",
   "_inCache": true,
   "_location": "/react-native-aliyun-onesdk",
   "_phantomChildren": {},
@@ -35,9 +34,7 @@
   "_shrinkwrap": null,
   "_spec": "react-native-aliyun-onesdk@file:./react-native-aliyun-onesdk",
   "_where": "/Users/wangduo/workspace/youpad/app_client/yimei_app",
-  "author": {
-    "name": "Wind Wang"
-  },
+  "author": "Wind Wang",
   "dependencies": {},
   "description": "React Native Aliyun OneSDK(notification)",
   "devDependencies": {},
@@ -58,9 +55,11 @@
   "main": "index",
   "name": "react-native-aliyun-onesdk",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git"
   },
-  "version": "0.0.2"
+  "version": "0.0.2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
