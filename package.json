@@ -1,40 +1,9 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "react-native-aliyun-onesdk@file:./react-native-aliyun-onesdk",
-        "scope": null,
-        "escapedName": "react-native-aliyun-onesdk",
-        "name": "react-native-aliyun-onesdk",
-        "rawSpec": "file:./react-native-aliyun-onesdk",
-        "spec": "/Users/wangduo/workspace/youpad/app_client/yimei_app/react-native-aliyun-onesdk",
-        "type": "directory"
-      },
-      "/Users/wangduo/workspace/youpad/app_client/yimei_app"
-    ]
-  ],
-  "_from": "react-native-aliyun-onesdk",
-  "_inCache": true,
-  "_location": "/react-native-aliyun-onesdk",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "react-native-aliyun-onesdk@file:./react-native-aliyun-onesdk",
-    "scope": null,
-    "escapedName": "react-native-aliyun-onesdk",
-    "name": "react-native-aliyun-onesdk",
-    "rawSpec": "file:./react-native-aliyun-onesdk",
-    "spec": "/Users/wangduo/workspace/youpad/app_client/yimei_app/react-native-aliyun-onesdk",
-    "type": "directory"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "file:react-native-aliyun-onesdk",
-  "_shasum": "3c8646c0f3b6efbf79ae620a7a45c455d386fd2f",
-  "_shrinkwrap": null,
-  "_spec": "react-native-aliyun-onesdk@file:./react-native-aliyun-onesdk",
-  "_where": "/Users/wangduo/workspace/youpad/app_client/yimei_app",
+
+  "name": "react-native-aliyun-onesdk",
+  "version": "0.0.5",
   "author": "Wind Wang",
+  "main": "index",
   "dependencies": {},
   "description": "React Native Aliyun OneSDK(notification)",
   "devDependencies": {},
@@ -52,14 +21,11 @@
     "react native push"
   ],
   "license": "MIT",
-  "main": "index",
-  "name": "react-native-aliyun-onesdk",
-  "optionalDependencies": {},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bestv2/react-native-aliyun-onesdk.git"
   },
-  "version": "0.0.4",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
