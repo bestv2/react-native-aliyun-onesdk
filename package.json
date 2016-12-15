@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-aliyun-onesdk@file:./react-native-aliyun-onesdk",
+        "scope": null,
+        "escapedName": "react-native-aliyun-onesdk",
+        "name": "react-native-aliyun-onesdk",
+        "rawSpec": "file:./react-native-aliyun-onesdk",
+        "spec": "/Users/wangduo/workspace/youpad/app_client/yimei_app/react-native-aliyun-onesdk",
+        "type": "directory"
+      },
+      "/Users/wangduo/workspace/youpad/app_client/yimei_app"
+    ]
+  ],
+  "_from": "react-native-aliyun-onesdk",
+  "_id": "react-native-aliyun-onesdk@0.0.2",
+  "_inCache": true,
+  "_location": "/react-native-aliyun-onesdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-aliyun-onesdk@file:./react-native-aliyun-onesdk",
+    "scope": null,
+    "escapedName": "react-native-aliyun-onesdk",
+    "name": "react-native-aliyun-onesdk",
+    "rawSpec": "file:./react-native-aliyun-onesdk",
+    "spec": "/Users/wangduo/workspace/youpad/app_client/yimei_app/react-native-aliyun-onesdk",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "file:react-native-aliyun-onesdk",
+  "_shasum": "3c8646c0f3b6efbf79ae620a7a45c455d386fd2f",
+  "_shrinkwrap": null,
+  "_spec": "react-native-aliyun-onesdk@file:./react-native-aliyun-onesdk",
+  "_where": "/Users/wangduo/workspace/youpad/app_client/yimei_app",
+  "author": {
+    "name": "Wind Wang"
+  },
+  "dependencies": {},
+  "description": "React Native Aliyun OneSDK(notification)",
+  "devDependencies": {},
+  "homepage": "",
+  "keywords": [
+    "React-Native",
+    "ios",
+    "android",
+    "notification",
+    "react-native-notification",
+    "react-native-aliyun-onesdk",
+    "react native aliyun notification",
+    "react native aliyun one sdk",
+    "react native notification",
+    "react native push"
+  ],
+  "license": "MIT",
+  "main": "index",
+  "name": "react-native-aliyun-onesdk",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git"
+  },
+  "version": "0.0.2"
+}
