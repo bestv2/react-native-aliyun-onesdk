@@ -100,6 +100,20 @@ Appdelegate.m
 	//            HuaWeiRegister.register(applicationContext);
 	    }
 ```
+##js
+```js
+	import AliPush from 'react-native-aliyun-onesdk';
+	AliPush.getInitialNotification().then((notification)=> {
+                
+            })
+            AliPush.requestPermissions().then((deviceId)=> {
+           
+            }, ()=> {
+            });
+            AliPush.on('remoteNotificationReceived', (notification)=> {
+                //ios 在前台运行时 同样触发该方法,此时没有提示框,
+            });
+```
 #available
 ##push 
 	remoteNotification
