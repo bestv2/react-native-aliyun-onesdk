@@ -7,7 +7,9 @@ npm install react-native-aliyun-onesdk --save
 react-native link react-native-aliyun-onesdk
 #configuration :
 ios: https://help.aliyun.com/document_detail/30072.html
+
 android: https://help.aliyun.com/document_detail/30064.html
+
 ##ios:
 mkdir yourProject/ios/OneSDK
 put the aliyun frameworks to the dir
