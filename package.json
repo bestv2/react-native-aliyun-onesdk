@@ -59,7 +59,7 @@
     "type": "git",
     "url": "git+https://github.com/bestv2/react-native-aliyun-onesdk.git"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
