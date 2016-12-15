@@ -102,7 +102,8 @@ Appdelegate.m
 	    }
 ```
 #available:
-##push: remoteNotification
-        bindAccount
-        unbindAccount
+##push: 
+	remoteNotification
+	bindAccount
+	unbindAccount
        
