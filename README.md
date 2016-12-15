@@ -5,12 +5,12 @@ npm install react-native-aliyun-onesdk --save
 
 ##usage
 react-native link react-native-aliyun-onesdk
-#configuration :
+##configuration :
 ios: https://help.aliyun.com/document_detail/30072.html
 
 android: https://help.aliyun.com/document_detail/30064.html
 
-##ios:
+#ios
 mkdir yourProject/ios/OneSDK
 put the aliyun frameworks to the dir
 add com.alibaba.app.appkey/com.alibaba.app.appsecret to your info.plist
@@ -68,7 +68,7 @@ Appdelegate.m
 		[AliPushManager didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 	}
 ```
-##android
+#android
 ```java
 	@Override
 	public void onCreate() {
@@ -101,8 +101,8 @@ Appdelegate.m
 	//            HuaWeiRegister.register(applicationContext);
 	    }
 ```
-#available:
-##push: 
+##available
+#push 
 	remoteNotification
 	bindAccount
 	unbindAccount
