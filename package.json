@@ -56,9 +56,10 @@
   "name": "react-native-aliyun-onesdk",
   "optionalDependencies": {},
   "repository": {
-    "type": "git@github.com:bestv2/react-native-aliyun-onesdk.git"
+    "type": "git",
+    "url": "git+https://github.com/bestv2/react-native-aliyun-onesdk.git"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
