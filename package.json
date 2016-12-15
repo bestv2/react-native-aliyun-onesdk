@@ -1,5 +1,4 @@
 {
-
   "name": "react-native-aliyun-onesdk",
   "version": "0.0.5",
   "author": "Wind Wang",
@@ -21,12 +20,14 @@
     "react native push"
   ],
   "license": "MIT",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bestv2/react-native-aliyun-onesdk.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/bestv2/react-native-aliyun-onesdk/issues"
   }
 }

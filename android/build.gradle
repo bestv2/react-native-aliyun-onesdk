@@ -35,5 +35,7 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.facebook.react:react-native:+'
+    compile 'com.alibaba:fastjson:1.1.52.android'
+
     // From node_modules
 }
