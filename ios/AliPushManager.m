@@ -251,7 +251,7 @@ RCT_EXPORT_METHOD(requestPermissions:(NSDictionary *)permissions
 									resolver:(RCTPromiseResolveBlock)resolve
 									rejecter:(RCTPromiseRejectBlock)reject)
 {
-	NSLog(@"requestPermissions");
+//	NSLog(@"requestPermissions");
 	if (RCTRunningInAppExtension()) {
 		reject(AliErrorUnableToRequestPermissions, nil, RCTErrorWithMessage(@"Requesting push notifications is currently unavailable in an app extension"));
 		return;
@@ -310,7 +310,7 @@ RCT_EXPORT_METHOD(requestPermissions:(NSDictionary *)permissions
 		// SDK初始化
 		NSString *appKey = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"com.alibaba.app.appkey"];
 		NSString *appSecret = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"com.alibaba.app.appsecret"];
-		NSLog(@"appKey:%@,appSecret:%@",appKey,appSecret);
+//		NSLog(@"appKey:%@,appSecret:%@",appKey,appSecret);
 		[CloudPushSDK asyncInit:appKey appSecret:appSecret callback:^(CloudPushCallbackResult *res) {
 		if (res.success) {
 			_requestPermissionsResolveBlock(self.deviceId);
@@ -320,7 +320,7 @@ RCT_EXPORT_METHOD(requestPermissions:(NSDictionary *)permissions
 		_requestPermissionsResolveBlock = nil;
 		_requestPermissionsRejectBlock = nil;
 	}];
-		NSLog(@"=========initCloudPush %@",[CloudPushSDK getDeviceId]);
+		NSLog(@"=========initCloudPush2 %@",[CloudPushSDK getDeviceId]);
 	}
 	
 
