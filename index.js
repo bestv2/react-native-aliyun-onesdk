@@ -7,6 +7,9 @@ import {
 
 const eventsMap = {
     remoteNotificationReceived: 'remoteNotificationReceived',
+    localNotificationReceived: 'localNotificationReceived',
+    aliMessageReceived: 'aliMessageReceived',
+    registerUserNotificationSettings: 'registerUserNotificationSettings',
 };
 
 const AliPushManager = NativeModules.AliPushManager;
