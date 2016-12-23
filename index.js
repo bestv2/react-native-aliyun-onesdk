@@ -2,7 +2,7 @@ import {
     NativeModules,
     DeviceEventEmitter,
     NativeEventEmitter,
-    Platform
+    Platform,
 } from 'react-native';
 
 const eventsMap = {
@@ -16,10 +16,10 @@ const AliPushManager = NativeModules.AliPushManager;
 
 const AliPush = {};
 
-
 AliPush.requestPermissions = (permissions=null) => {
     return AliPushManager.requestPermissions(permissions);
 };
+AliPush.setApplicationIconBadgeNumber = AliPushManager.setApplicationIconBadgeNumber;
 AliPush.bindAccount = AliPushManager.bindAccount;
 AliPush.unbindAccount = AliPushManager.unbindAccount;
 AliPush.getInitialNotification = AliPushManager.getInitialNotification;
