@@ -1,6 +1,6 @@
 {
   "name": "react-native-aliyun-onesdk",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React Native Aliyun OneSDK(notification)",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/bestv2/react-native-aliyun-onesdk/issues"
   },
-  "homepage": "https://github.com/bestv2/react-native-aliyun-onesdk#readme",
   "keywords": [
     "React-Native ios android aliyun notification",
     "android",
