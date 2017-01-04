@@ -89,7 +89,6 @@ RCT_EXPORT_MODULE()
 
 - (void)startObserving
 {
-	NSLog(@"startObserving");
 
 	[[NSNotificationCenter defaultCenter] addObserver:self
 																					 selector:@selector(handleLocalNotificationReceived:)
@@ -114,7 +113,6 @@ RCT_EXPORT_MODULE()
  *    注册推送消息到来监听
  */
 - (void)registerMessageReceive {
-	NSLog(@"注册推送事件");
 	[[NSNotificationCenter defaultCenter] addObserver:self
 																					 selector:@selector(onMessageReceived:)
 																							 name:@"CCPDidReceiveMessageNotification"
@@ -138,7 +136,6 @@ RCT_EXPORT_MODULE()
 // been removed we can get rid of this
 - (NSDictionary<NSString *, id> *)constantsToExport
 {
-	NSLog(@"=========AliPushManger constantsToExport");
 	return @{};
 
 }
@@ -177,11 +174,9 @@ RCT_EXPORT_MODULE()
 + (void)didReceiveRemoteNotification:(NSDictionary *)notification
 {
 	[CloudPushSDK handleReceiveRemoteNotification:notification];
-	NSLog(@"didReceiveRemoteNotification");
 	[[NSNotificationCenter defaultCenter] postNotificationName:RemoteNotificationReceived
 																											object:self
 																										userInfo:notification];
-																											NSLog(@"didReceiveRemoteNotification end");
 
 }
 
@@ -199,7 +194,6 @@ RCT_EXPORT_MODULE()
 
 - (void)handleRemoteNotificationReceived:(NSNotification *)notification
 {
-	NSLog(@"handleRemoteNotificationReceived remoteNotificationReceived");
 	[self sendEventWithName:@"remoteNotificationReceived" body:notification.userInfo];
 }
 
@@ -216,7 +210,6 @@ RCT_EXPORT_MODULE()
 	CCPSysMessage *message = [notification object];
 	NSString *title = [[NSString alloc] initWithData:message.title encoding:NSUTF8StringEncoding];
 	NSString *body = [[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding];
-	NSLog(@"Receive message title: %@, content: %@.", title, body);
 	[self sendEventWithName:@"aliMessageReceived" body: @{@"title":title,@"content":body}];
 }
 - (void)handleRegisterUserNotificationSettings:(NSNotification *)notification
@@ -251,7 +244,6 @@ RCT_EXPORT_METHOD(requestPermissions:(NSDictionary *)permissions
 									resolver:(RCTPromiseResolveBlock)resolve
 									rejecter:(RCTPromiseRejectBlock)reject)
 {
-//	NSLog(@"requestPermissions");
 	if (RCTRunningInAppExtension()) {
 		reject(AliErrorUnableToRequestPermissions, nil, RCTErrorWithMessage(@"Requesting push notifications is currently unavailable in an app extension"));
 		return;
@@ -282,7 +274,6 @@ RCT_EXPORT_METHOD(requestPermissions:(NSDictionary *)permissions
 	
 	UIApplication *app = RCTSharedApplication();
 
-	NSLog(@"[[[UIDevice currentDevice] systemVersion] floatValue],%f",[[[UIDevice currentDevice] systemVersion] floatValue]);
 //	if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0) {
 //		[[UIApplication sharedApplication] registerForRemoteNotifications];
 // 		[UNUserNotificationCenter currentNotificationCenter].delegate = [[UIApplication sharedApplication] delegate];
@@ -320,7 +311,6 @@ RCT_EXPORT_METHOD(requestPermissions:(NSDictionary *)permissions
 		_requestPermissionsResolveBlock = nil;
 		_requestPermissionsRejectBlock = nil;
 	}];
-		NSLog(@"=========initCloudPush2 %@",[CloudPushSDK getDeviceId]);
 	}
 	
 

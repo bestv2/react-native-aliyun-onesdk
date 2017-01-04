@@ -1,6 +1,6 @@
 {
   "name": "react-native-aliyun-onesdk",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "React Native Aliyun OneSDK(notification)",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bestv2/react-native-aliyun-onesdk.git"
-  },
-  "author": "bestv2",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bestv2/react-native-aliyun-onesdk/issues"
   },
   "keywords": [
     "React-Native ios android aliyun notification",
@@ -25,5 +20,7 @@
     "react native aliyun one sdk",
     "react native notification",
     "react native push"
-  ]
+  ],
+  "author": "bestv2",
+  "license": "MIT"
 }
