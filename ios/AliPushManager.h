@@ -6,7 +6,7 @@
 //  Copyright © 2016年 王舵. All rights reserved.
 //
 
-#import "RCTEventEmitter.h"
+#import <React/RCTEventEmitter.h>
 
 @interface AliPushManager : RCTEventEmitter
 

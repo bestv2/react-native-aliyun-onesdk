@@ -222,10 +222,7 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../../ios/OneSDK",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../react-native/React/**",
-					"$(inherited)",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -241,10 +238,7 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../../ios/OneSDK",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../react-native/React/**",
-					"$(inherited)",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
