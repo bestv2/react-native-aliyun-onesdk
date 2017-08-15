@@ -1,6 +1,6 @@
 {
   "name": "react-native-aliyun-onesdk",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Native Aliyun OneSDK(notification)",
   "main": "index.js",
   "scripts": {
