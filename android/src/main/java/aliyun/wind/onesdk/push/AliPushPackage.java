@@ -28,7 +28,9 @@ public class AliPushPackage implements ReactPackage {
         list.add(aliPushModule);
         return list;
     }
-
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Collections.emptyList();
+    }
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
