@@ -102,7 +102,7 @@ Appdelegate.m
 	//            HuaWeiRegister.register(applicationContext);
 	    }
 ```
-js
+### js
 ```js
 	import AliPush from 'react-native-aliyun-onesdk'; 
 	AliPush.getInitialNotification().then((notification)=> {}); 
